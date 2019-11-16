@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
+    <form class="needs-validation" novalidate id="formArticulo">
+        <div class="form-group">
+            <label for="codigoArticulo">Codigo:</label>
+            <input type="number" id="codigoArticulo" placeholder="7504516130567" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="nombreArticulo">Nombre:</label>
+            <input type="text" id="nombreArticulo" placeholder="Lechita de la buena" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="precioArticulo">Precio:</label>
+            <input type="number" id="precioArticulo" placeholder="$850.00" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="contenidoArticulo">Contenido:</label>
+            <input type="number" id="contenidoArticulo" placeholder="800ml" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="descripcionArticulo">Descripcion:</label>
+            <input type="text" id="descripcionArticulo" placeholder="Leche entera lala pasteurisada"
+                class="form-control" required>
+        </div>
+    </form>
     <button type="button" id="agregar">Agregar</button>
+    <button type="button" id="imprimir">Imprimir</button>
+
+    <div id="print">
+
+    </div>
 
     <script src="./main.js" type="module"></script>
 </body>
+
 </html>
